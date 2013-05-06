@@ -1,0 +1,15 @@
+{
+  "key": "3q363rtv1mkc0cq",
+  "secret": "3tfe04aup2o99d8",
+  "requesttoken": {
+    "oauth_token_secret": "xSZ0jDBDiigZpfLn",
+    "oauth_token": "tvvtBXxzDkoT1oMy",
+    "authorize_url": "https://www.dropbox.com/1/oauth/authorize?oauth_token=tvvtBXxzDkoT1oMy"
+  },
+  "accesstoken": {
+    "oauth_token_secret": "jd2or0kd0r8bsu4",
+    "oauth_token": "uayhn66cjlej5wt",
+    "uid": "19958119"
+  },
+  "path": "files"
+}

@@ -1,0 +1,34 @@
+# delta
+
+## usage
+
+    $ mkdir syncthis
+    $ delta init syncthis
+    follow directions
+    $ delta syncthis
+
+you can also use delta programmatically.
+
+    var delta = require('delta')
+    var client = new delta()
+
+    client.configure({
+      "key": "app_key",
+      "secret": "app_secret",
+      "oauth_token": "user_token",
+      "oauth_token_secret": "user_token_secret"
+    })
+
+    client.delta('syncthis', function (error) {
+      if (error) {
+        console.log(error)
+      }
+    })
+
+    client.path('syncthis').client.delta(function (error) {
+      // same as above
+    })
+
+## license
+
+licensed under bsd. copyright zach ahn

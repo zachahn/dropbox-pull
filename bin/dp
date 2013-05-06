@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var dp = require('commander')
+var dplib = require('../lib/_dp')
+
+dp
+  .version('0.0.0')
+
+dp
+  .command('init [directory]')
+  .description('initialize a dropbox directory')
+  .action(dplib.init)
+
+dp
+  .command('pull [directory]')
+  .description('pull into [directory]')
+  .action(dplib.pull)
+
+dp
+  .command('status [directory]')
+  .description('check if [directory] needs to be updated')
+  .action(dplib.status)
+
+dp
+  .command('diff [directory]')
+  .description('lists changes')
+  .action(dplib.diff)
+
+dp.parse(process.argv)
