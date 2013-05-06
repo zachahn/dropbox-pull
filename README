@@ -1,16 +1,16 @@
-# delta
+# node-dp
 
 ## usage
 
     $ mkdir syncthis
-    $ delta init syncthis
+    $ dp init syncthis
     follow directions
-    $ delta syncthis
+    $ dp syncthis
 
-you can also use delta programmatically.
+you can also use `node-dp` programmatically.
 
-    var delta = require('delta')
-    var client = new delta()
+    var dp = require('dp')
+    var client = new dp()
 
     client.configure({
       "key": "app_key",
