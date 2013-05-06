@@ -7,28 +7,6 @@
     follow directions
     $ dp syncthis
 
-you can also use `node-dp` programmatically.
-
-    var dp = require('dp')
-    var client = new dp()
-
-    client.configure({
-      "key": "app_key",
-      "secret": "app_secret",
-      "oauth_token": "user_token",
-      "oauth_token_secret": "user_token_secret"
-    })
-
-    client.delta('syncthis', function (error) {
-      if (error) {
-        console.log(error)
-      }
-    })
-
-    client.path('syncthis').client.delta(function (error) {
-      // same as above
-    })
-
 ## license
 
 licensed under bsd. copyright zach ahn
